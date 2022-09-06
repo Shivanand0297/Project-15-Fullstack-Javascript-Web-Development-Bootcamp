@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111111;
+    color: #fff;
+}
+
+/* navigation section */
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    height: 15vh;
+
+}
+
+.navigation .logo img,
+.footer-socials .logo img{
+    width: 100px;
+}
+
+.navigation .menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 12px;
+    gap: 20px;
+    /* border: 2px solid red; */
+}
+
+.navigation .menu-item{
+    font-weight: 600;
+    cursor: pointer;
+    /* border: 2px solid green; */
+
+}
+
+
+.navigation .menu-item:hover::after{
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+ .fa-bars{
+    display: none;
+    color: #fff;
+}
+
+/* hero section */
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85vh;
+
+}
+
+.hero-section .hero{
+    flex: 1;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+.hero-section .hero-content{
+    flex: 1;
+    padding-right: 4rem;
+    text-align: left;
+}
+
+.hero-content h4{
+    color: #EF3040;
+    font-size: 1.5rem;
+
+}
+
+.hero-content h2{
+    color: #fff;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p{
+    color: rgb(213, 213, 213);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.hero-content .btn{
+    background-color: #C91B28;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* cards section */
+
+.cards{
+    padding: 1.5rem;
+    height: max-content;
+    width: 85vw;
+    margin: 4rem auto;
+    position: relative;
+}
+
+.cards .gray-bgc {
+    background-color: #181818;
+    width: 50vw;
+    height: 110%;
+    position: absolute;
+    top: -30px;
+    left: -105px;
+    z-index: -1;
+}
+
+.cards .card-row-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card{
+    flex-basis: 300px;
+    height: 335px;
+    padding: 2.5rem;
+    /* margin: 1rem; */
+    background-color: #1E1E1E;
+    cursor: pointer;
+}
+
+.cards .card-red{
+    background-color: #C91B28;
+}
+
+
+.card img{
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.card h3, p{
+    margin-bottom: 1rem;
+}
+.card .know-more{
+    color: #EF3040;
+}
+.card .know-more-white{
+    color: #fff;
+}
+
+/* card-row-2 */
+
+.cards .card-row-2{
+    display: flex;
+    /* border: 1px solid white; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 1rem;
+
+}
+
+.cards .exp{
+    flex-basis: 300px;
+    /* border: 1px solid pink; */
+    background-color: #181818;
+    text-align: center;
+}
+
+.cards .card-row-2 .exp h1{
+    font-size:  7rem;
+    font-weight: 800;
+    color: #C91B28;
+}
+
+.cards .card-row-2 .exp p{
+    font-size:  2rem;
+    font-weight: 600;
+}
+
+.cards .highlights{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cards .highlight-card{
+    background-color: #1E1E1E;
+    text-align: center;
+    padding: 2rem 5rem;
+    margin-bottom: 1rem;
+    flex-basis: 300px;
+    height: 180px;
+}
+.cards .highlight-card h2{
+    color: #C91B28;
+    font-size: 3.5rem;
+}
+.cards .highlight-card p{
+    color: #d5d5d5;
+    font-size: 1.2rem;
+}
+
+.cards .highlight-row-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.cards .highlight-row-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+/* project Section */
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin: 7rem auto;
+    /* align-items: center; */
+}
+.all-project-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.all-project-cards .bgc{
+    background-color: #1E1E1E;
+}
+
+
+.projects .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}   
+
+.heading h3{
+    font-weight: 800;
+    margin-bottom: .8rem;
+}
+
+.heading p {
+    font-size: small;
+}
+
+.heading .btn{
+    background-color: #C91B28;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.projects .project-row-1,
+.projects .project-row-2{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.projects .project-cards{
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.projects .project-cards h3{
+    margin-top: 1rem;
+    cursor: pointer;
+
+}
+
+.projects .project-cards p{
+    margin-top: .5rem;
+    font-size: small;
+    color: #EF3040;
+    cursor: pointer;
+}
+
+.projects .project-cards img{
+    width: 90%;
+    height: auto;
+    padding: 2rem 0rem 2rem 2.2rem;
+}
+
+/* contact section */
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8.2rem;
+    padding: 4rem;
+    background-color: #1E1E1E;
+}
+
+.contact .contact-content{
+    width: 65%;
+}
+
+.contact h2{
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+}
+
+.contact p{
+    font-size: 1rem;
+    color: #d5d5d5;   
+}
+
+.contact .btn {
+    text-transform: uppercase;
+    background-color: #C91B28;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.footer-nav{
+    padding: 2rem;
+}
+
+.footer-nav .footer-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0px auto;
+    list-style: none;
+    gap: 1rem;
+}
+
+.footer-nav .footer-item{
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* socials */
+
+.footer-socials{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 8rem;
+    background-color: #1E1E1E;
+}
+.footer-socials .logo,
+.footer-socials .socials{
+    flex: 1;
+}
+
+.socials i{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+
+/* media queries for mobile responsiveness */
+
+@media screen and (max-width:1300px) {
+    /* .hero-section{
+        height: 60vh;
+    } */
+    .hero-content h2{
+        font-size: 3rem;
+    }
+    .hero-content p{
+        font-size: 1rem;
+    }
+    .contact h2{
+        font-size: 2.2rem;
+    }
+    .contact {
+        margin: 1.2rem;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    
+    .cards .highlight-card{
+        padding: 1.5rem 3rem;
+    }
+}
+
+@media screen and (max-width:955px) {
+    .card {
+        height: 280px;
+        padding: 2.2rem;
+    }
+    .card img {
+        width: 40px;
+        margin-bottom: .7rem;
+    }
+    .card .card-des{
+        font-size: small;
+    }
+    .card .know-more{
+        font-size: 0.8rem;
+    }
+    .cards{
+        padding: 0px;
+    }
+    .cards .card-row-1 {
+        justify-content: center;
+        /* flex-wrap: wrap; */
+    }
+    .cards .card-row-2 .exp h1 {
+        font-size: 5rem;
+    }
+    .cards .card-row-2 .exp p {
+        font-size: 1.2rem;
+    }
+    .cards .highlight-card h2 {
+        font-size: 2.5rem;
+    }
+    .cards .highlight-card p {
+        font-size: 1rem;
+    }
+    .cards .highlight-card{
+        height: 145px;
+    }
+
+    .cards .gray-bgc {
+    top: -75px;
+    }
+    .hero-section .hero-content{
+        padding-right: 2rem;
+    }
+    .projects {
+        padding: 1rem;
+        margin: 4rem auto;
+    }
+    .projects .project-cards img {
+        padding: 1rem 0rem 1rem 2rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:860px){
+
+    .hero-content h2{
+        font-size: 2rem;
+    }
+    .hero-content h4{
+        font-size: .8rem;
+    }
+    .hero-content p{
+        font-size: .8rem;
+    }
+    .hero-content .btn {
+        padding: 0.8rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .cards .card-row-1{
+        flex-wrap: wrap;
+    }
+    .cards .card-row-2{
+        flex-direction: column;
+    }
+    .cards .exp {
+        padding: 1rem;
+        flex-basis: 0%;
+    }
+}
+
+@media screen and (max-width:755px) {
+    .contact{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-socials .logo img{
+        width: 80px;
+    }
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+    .contact p {
+        font-size: small;
+    }
+    .contact .btn {
+        padding: 0.8rem 1.2rem;
+        font-size: .8rem;
+    }
+    .contact .contact-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .heading p{
+        font-size: 12px;
+    }
+    .heading .btn,
+    .contact .btn {
+        padding: 0.5rem 1rem;
+    }
+    
+}
+
+@media screen and (max-width:620px) {
+    .navigation .fa-bars{
+        display: block;
+    }
+    .navigation .menu-list{
+        display: none;
+    }
+    .navigation .logo img, 
+    .footer-socials .logo img {
+        width: 75px;
+    }
+    .hero-section .hero-content {
+        padding: 1rem;
+    }
+    .hero-content h4 {
+        font-size: 0.6rem;
+    }
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+    .hero-content p {
+        font-size: x-small;
+    }
+    .hero-content .btn,
+    .heading .btn,
+    .contact .btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.6rem;
+    }
+
+    .projects .heading{
+        flex-direction: column;
+    }
+    .projects .project-row-1, 
+    .projects .project-row-2{
+        flex-direction: column;
+    }
+    .footer-socials {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2rem 3rem;
+        gap: 1rem;
+    }
+}
+
+
+@media screen and (max-width:580px) {
+    .footer-nav .footer-item {
+        font-size: 9px;
+    }
+    .footer-socials .logo img {
+        width: 50px;
+    }
+    .socials i {
+        font-size: .8rem;
+    }
+    .footer-socials {
+    padding: 1rem 2rem;
+    gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .cards .highlight-card h2 {
+        font-size: 2rem;
+    }
+    .cards .highlight-card p {
+        font-size: 0.8rem;
+    }
+    .cards .highlight-card {
+        height: 120px;
+    }
+    .cards .card-row-2 .exp h1 {
+        font-size: 4rem;
+    }
+    .cards .card-row-2 .exp p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:465px) {
+    .cards .highlight-row-1,
+    .cards .highlight-row-2{
+        display: block;
+    }
+}
+
+@media screen and (max-width:425px){
+    .hero-section {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card{
+        flex-basis: 255px;
+        height: 235px;
+        padding: 2.2rem;
+    }
+    .cards .gray-bgc {
+        top: 0px;
+    }
+    .cards .gray-bgc {
+        top: 0px;
+        height:100%;
+    }
+    .projects .heading {
+        align-items: flex-end;
+    }
+}
+
+/* 
+time taken: 8hours
+learnings: card design
+*/
